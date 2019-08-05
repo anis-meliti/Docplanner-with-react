@@ -1,8 +1,6 @@
 import React from 'react';
 import './Style/Myheader.css';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 const Myheader = () => {
     return (
@@ -14,7 +12,7 @@ const Myheader = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto "></Nav>
-                <Nav.Link href="#About US">About Us</Nav.Link>
+                <Nav.Link href="#About US">AboutUs</Nav.Link>
                 <Nav.Link href="#Carrer">Carrer</Nav.Link>
                 <NavDropdown title="Departements" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">marketing &&PR</NavDropdown.Item>

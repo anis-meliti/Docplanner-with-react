@@ -1,0 +1,9 @@
+h1 {
+  color: #00b39b;
+}
+
+.description-container {
+  line-height: 1.75;
+  margin: 25px;
+  white-space: normal;
+}
