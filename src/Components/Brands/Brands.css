@@ -1,0 +1,11 @@
+.brand svg {
+    margin-left: 0.5%;
+    padding-top: 1%;
+    max-width: 100%;
+    padding-top: 10px;
+    fill: #747474;
+}
+
+.brand:hover svg {
+    fill: #00b39b;
+}

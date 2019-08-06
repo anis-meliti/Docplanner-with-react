@@ -20,7 +20,7 @@ const Fadelement = (props) => {
 
                         {
                             props.countries.map((el, i) => {
-                                return (<option key={i} value={el.toString()}>{el.toString()}</option>)
+                                return (<option key={i} value={el.toString().toUpperCase()}>{el.toString()}</option>)
                             })
                         }
                     </select>
