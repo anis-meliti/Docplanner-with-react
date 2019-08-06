@@ -1,36 +1,38 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Form from 'react-bootstrap/FormGroup';
+import './Style/FadeElement.css'
 
 
 const Fadelement = (props) => {
+
     return (
-        <Container>
-            <Row>
-                <Col>For {props.destination}</Col>
+        <Container className="service-div" >
+
+            <Row className="title">
+                <Col className="title">For {props.destination}</Col>
             </Row>
             <Row>
-                <Col><h3>{props.description}</h3></Col>
+                <Col className="desc"><h3>{props.description}</h3></Col>
             </Row>
-            <Row>
-                <Col md={{ span: 2, offset: 1 }}>
-                    <Form.control as select>
+            {(props.countries !== undefined) && <Row>
+                <Col md={{ span: 2, offset: 1 }} className="countries-select">
+                    <select>
+
                         {
                             props.countries.map((el, i) => {
-                                return (<option key={i} value={el}>el</option>)
+                                return (<option key={i} value={el.toString()}>{el.toString()}</option>)
                             })
                         }
-                    </Form.control>
-
-
-
+                    </select>
                 </Col>
             </Row>
-            <Row>
-                <Col>
-                    <img src={props.image}></img>
-                </Col>
+
+            }
+
+            <Row className="place-img">
+                <img src={props.image} alt="pic" />
             </Row>
+
         </Container>
     );
 

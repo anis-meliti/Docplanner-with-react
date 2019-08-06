@@ -1,0 +1,51 @@
+.service-div {
+    width: 478px;
+    height: 391px;
+    border-radius: 10px;
+    background-color: #00ccb1;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.title {
+    color: hsla(0, 0%, 100%, .7);
+    font-size: 14px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.desc {
+    color: #fff;
+    font-size: 27px;
+    padding-left: 30px;
+}
+
+.countries-select {
+    margin: 3% 2% 0% 7%;
+    width: 80px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.countries-select select {
+    width: 175px;
+    height: 40px;
+    border-radius: 5px;
+    background: #fff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 3% 2% 0% 10%;
+}
+
+.place-img {
+    width: 100%;
+    padding-top: 2%;
+
+}
+
+.place-img img {
+    max-width: 350px;
+    margin-left: 59%;
+    margin-top: -2.3em;
+}

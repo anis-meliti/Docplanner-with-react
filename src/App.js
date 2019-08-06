@@ -3,8 +3,15 @@ import './App.css';
 import logo from "./img/sygnet.png"
 import Myheader from './Components/Myheader/Myheader';
 import { Container, Row, Col } from 'react-bootstrap';
+import Fadelement from './Components/FadeElement/Fadelement';
+import forPatImg from './img/screen-marketplace@2x.png';
+import forDocImg from './img/screen-saas@2x.png';
+
 
 function App() {
+
+  const arrcountries = ["Argentina", "Australia", "Brasil", "Chilie", "Colombia", "Czech", "France", "Italy", "Mexico", "Peru", "Poland", "Portugal", "Spain", "Turkey", "UK"];
+
   return (
     <div>
       <Myheader />
@@ -32,9 +39,21 @@ function App() {
           </Col>
         </Row>
       </Container>
+
+      <Row>
+        <Col md={{ span: 4, offset: 2 }}>
+          <Fadelement destination="patients"
+            description="Find a doctor, book a visit and solve any health-related doubt" countries={arrcountries}
+            image={forPatImg} />
+        </Col>
+        <Col md={4} >
+          <Fadelement destination="doctors"
+            description=" Save time managing visits and cut no-shows by half"
+            image={forDocImg} />
+        </Col>
+      </Row>
+
     </div>
-
-
   );
 }
 
