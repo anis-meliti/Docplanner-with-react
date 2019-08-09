@@ -1,0 +1,27 @@
+.land-desc {
+    padding: 0%;
+    font-size: 13px;
+}
+
+.rd-title {
+    font-size: 20px;
+}
+
+.rd-desc {
+    font-size: .4em;
+    font-weight: 400;
+}
+
+.box-img {
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.box {
+    background-color: #fff;
+    width: 228px !important;
+    height: 250px;
+    border-radius: 5px;
+    margin-top: 5%;
+
+}

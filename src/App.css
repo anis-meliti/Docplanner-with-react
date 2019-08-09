@@ -3,7 +3,7 @@ h4 {
   color: #00b39b;
 }
 
-.description-container {
+h3 .description-container {
   line-height: 1.75;
   margin: 25px;
   white-space: normal;
@@ -15,4 +15,30 @@ h4 {
   max-width: 100%;
   padding-top: 10px;
   fill: #747474;
+}
+
+.statis-div {
+
+
+  font-size: 2.2em;
+  font-weight: 400;
+  max-width: 100% !important;
+  background-color: #e5faf8;
+  height: 600px;
+}
+
+.stat-title {
+  color: #00b39b;
+  margin-top: 5%;
+}
+
+.statis-desc {
+  font-size: .4em;
+  font-weight: 300;
+  padding: 13px 129px;
+
+}
+
+.primary-dev {
+  max-width: 56% !important;
 }
