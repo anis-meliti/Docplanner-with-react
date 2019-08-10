@@ -3,22 +3,30 @@ import React from 'react';
 import Myheader from './Components/Myheader/Myheader';
 import Fadelement from './Components/FadeElement/Fadelement';
 import Brands from './Components/Brands/Brand'
-import StatisBox from './Components/StatisBox/StatisBox';
+import Office from './Components/Office/Office'
+// import StatisBox from './Components/StatisBox/StatisBox';
 // =========Style import========
 import './App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 // ==========image import===========
-import logo from "./img/sygnet.png"
+import sygnetLogo from "./img/sygnet.png"
 import forPatImg from './img/screen-marketplace@2x.png';
 import forDocImg from './img/screen-saas@2x.png';
-import flag from './img/flag.png';
-import patients from "./img/patients.png"
-import visits from "./img/visits.png";
+// import flag from './img/flag.png';
+// import patients from "./img/patients.png"
+// import visits from "./img/visits.png";
+import logo from './img/logo.png';
+import warsaw from './img/warsaw@2x.png';
+import barcelona from './img/barcelona.png'
+import istanbul from './img/istanbul.png';
+import rome from './img/rome.png';
+import mexico from './img/mexico-city (1).png';
+import curitiba from './img/curitiba.png'
 
 
 
 function App() {
-
+  // **********************Variable section***************
   const arrcountries = ["CHOOSE Countries", "Argentina", "Australia", "Brasil", "Chilie", "Colombia", "Czech", "France", "Italy", "Mexico", "Peru", "Poland", "Portugal", "Spain", "Turkey", "UK"];
   const brandLogos = [<svg xmlns="http://www.w3.org/2000/svg" width="200" height="32" viewBox="0 0 200 32">
     <path
@@ -41,24 +49,31 @@ function App() {
       d="M186.445 10.684h3l.244 2.445h.03c.768-1.12 2.635-2.555 4.81-2.674v3.19c-3.17.617-4.622 2.718-4.622 4.623v7.596h-3.463V10.684zm-13.416-.294c1.504-.124 3.136-.162 4.713-.162 3.713 0 5.928 1.436 5.928 5.492v10.146h-3.11l-.153-1.52h-.04c-1.068 1.15-2.62 1.823-4.606 1.823-2.63 0-4.72-1.705-4.72-5.08 0-3.14 2.617-6.066 9.17-4.676V15.5c0-1.81-1.06-2.315-3.15-2.315-1.283 0-2.37.087-4.026.23V10.39h-.005zm7.178 8.427c-2.776-.705-5.554.162-5.554 2.31 0 1.423.945 2.26 2.353 2.196 1.11-.05 2.333-.543 3.2-1.31v-3.196zm-18.896 1.57v5.48h-3.463V5.012l3.462-.4v12.116c1.918-1.628 3.74-3.757 5.027-6.042h3.675c-1.29 2.504-2.828 4.664-4.713 6.51l5.12 8.673h-3.896l-3.8-6.444c-.472.376-.975.69-1.415.97v-.005zm-19.414-2.066v-.06c0-4.67 2.27-8.032 6.973-8.032 4.36 0 6.386 2.52 6.386 7.814 0 .56-.04 1.334-.1 1.904h-9.62c.248 2.137 1.493 3.416 4.052 3.416 1.62 0 3.14-.152 4.55-.337v2.9c-1.583.248-2.928.396-4.64.396-4.98 0-7.596-2.49-7.596-8h-.004zm3.58-.956h6.257c0-2.375-.623-4.25-2.957-4.25-2.43 0-3.238 2-3.3 4.25zM129.815 4.61h3.785v17.818h7.445v3.438h-11.23V4.61zm-15.412 6.074h3.662c.596 2.88 2.16 8.483 3.006 11.3h.066c.814-2.848 2.38-8.45 3.006-11.3h3.63c-1.126 4.32-3.87 12.68-4.944 15.183-1.076 2.51-2.626 6.75-8.327 5.987v-2.728c2.64.15 4.043-.842 4.91-2.805-1.342-3.172-3.91-11.316-5.004-15.637h-.004zm-11.5 2.014c1.01-1.354 2.734-2.47 4.826-2.47 3.453 0 4.902 1.966 4.902 5.774v9.863h-3.46v-9.15c0-2.465-.717-3.41-2.514-3.3-1.747.11-3.2 1.87-3.2 4.47v7.984h-3.462v-9.15c0-2.468-.71-3.44-2.513-3.304-1.747.13-3.2 2.05-3.2 4.47v7.983h-3.46V10.685h3.014s.14 1.507.2 2.05h.04c.838-1.31 2.31-2.506 4.484-2.506 2.25 0 3.65.835 4.35 2.47l-.006-.002zm-25.6-2.31c1.505-.122 3.137-.16 4.713-.16 3.713 0 5.928 1.436 5.928 5.49v10.148H84.83l-.16-1.518h-.04c-1.067 1.15-2.62 1.822-4.605 1.822-2.633 0-4.723-1.704-4.723-5.08 0-3.14 2.62-6.064 9.172-4.674v-.912c0-1.81-1.06-2.315-3.15-2.315-1.284 0-2.37.088-4.027.23v-3.026l.006-.005zm7.178 8.43c-2.777-.706-5.555.16-5.555 2.308 0 1.424.945 2.26 2.354 2.197 1.11-.05 2.33-.543 3.2-1.31v-3.196.002zm-24.736-8.134h3.015s.134 1.507.2 2.05H63c.836-1.31 2.59-2.506 4.71-2.506 3.58 0 5.357 1.907 5.357 5.775v9.863h-3.463v-9.15c0-2.465-.95-3.432-2.818-3.3-1.692.12-3.578 2.05-3.578 4.47v7.984h-3.464V10.684zM43.07 4.61h13.657v2.87l-9.43 14.948h9.587v3.438H42.512v-2.93L51.965 8.05H43.07V4.61zM17.684 24.598c.767-1.882 2.927-4.515 5.13-5.874l4.875 8.07-4.998 3.628-5.01-5.824h.002zm-7.203 5.815L3.61 25.99C8.814 16.26 18.54 9.33 29.973 8.04l1.915 5.898c-9.428 1.858-17.29 8.078-21.407 16.475zm1.5-20.027l.87-10.33h6.175l.785 9.342c-3.544 1.217-5.628 2.186-8.016 3.654a25.36 25.36 0 0 0-4.8 3.797L0 13.895l1.906-5.882 10.075 2.372z">
     </path>
   </svg>];
-  const statisArray = [{ image: flag, stisTitle: 'Leader in 10 countries', statisDesc: "Poland, Turkey, Spain, Italy, Czech Republic, Mexico, Brazil,Colombia,Argentina and Chile" },
-  { image: patients, stisTitle: "30 million unique patients", statisDesc: "visit us every month" },
-  { image: visits, stisTitle: "1.5 million appointments", statisDesc: "booked last month" },
+  // const statisArray = [{ image: flag, stisTitle: 'Leader in 10 countries', statisDesc: "Poland, Turkey, Spain, Italy, Czech Republic, Mexico, Brazil,Colombia,Argentina and Chile" },
+  // { image: patients, stisTitle: "30 million unique patients", statisDesc: "visit us every month" },
+  // { image: visits, stisTitle: "1.5 million appointments", statisDesc: "booked last month" },
 
-  ]
+  // ]
+  const officesArray = [
+    { imageOffice: { warsaw }, city: "Warsaw" }, { imageOffice: { barcelona }, city: "Barcelona" },
+    { imageOffice: { istanbul }, city: "Istanbul" }, { imageOffice: { rome }, city: "Rome" },
+    { imageOffice: { mexico }, city: "Mexico" }, { imageOffice: { curitiba }, city: "Curitiba" }];
   return (
     <div>
       <Myheader />
-      <Container>
+
+      {/* *******Introduction Section******** */}
+      {/* *********************************** */}
+      <Container className="main-container">
         <Row >
-          <Col md={{ offset: 6 }}><img src={logo} alt="Docplanner Logo " ></img></Col>
+          <Col md={{ offset: 6 }}><img src={sygnetLogo} alt="Docplanner Logo " ></img></Col>
         </Row>
 
         <Row><Col md={{ offset: 2 }}> <h1>Making the healthcare experience more human</h1></Col></Row>
 
         <Row>
           <Col lg={{ span: 6 }}><span className="description-container">We want patients to find the perfect doctor and book
-            an appointment in the most easy way. The patient journey
+            an appointment in the most easyway. The patient journey
             should be enjoyable, and that's why we are
             always next to them: to help them find the best
                         possible care. Anytime, anywhere.</span></Col>
@@ -73,6 +88,7 @@ function App() {
           </Col>
         </Row>
       </Container>
+      {/* Service && brand section */}
       <Container>
         <Row>
           <Col md={{ span: 5, offset: 1 }}>
@@ -100,6 +116,8 @@ function App() {
           </Col>
         </Row>
       </Container>
+      {/* ***********Statistic div************* */}
+      {/* ************************************* */}
       <Container className="statis-div">
         <Col sm={{ span: 4, offset: 2 }} className="primary-dev">
           <Row  >
@@ -113,13 +131,45 @@ function App() {
                life in almost 20 countries.
              </Col>
           </Row>
+          <Row sm={{ span: 3, offset: 1 }}>
+            <img src={logo} alt='Logo deocplanner' className="image-statis" />
+          </Row>
         </Col>
-        {/* <div>
-          {
-            statisArray.map((el, i) => <StatisBox key={i} image={el.image} stisTitle={el.stisTitle} statisDesc={el.statisDesc} />)
-          }
-        </div> */}
+        {/* ************Description Section**************** */}
+      </Container>>
+        <Container>
+        <Col sm={{ span: 7, offset: 2 }} className="text-div ">
+          <Row> <h1>Improve the lives of millions. &nbsp; Change yours forever</h1></Row>
+          <Row>
+            <p className="text-div ">
+              More than 1000 team mates share our same vision, goals and passion. With offices in Warsaw,
+              Barcelona, Istanbul, Rome, Mexico City and Curitiba, our search for great talent never stops.
+            </p>
+          </Row>
+        </Col>
       </Container>
+      {/* **************Office Section************* */}
+      {/* ***************************************** */}
+      <Container className="office-section">
+
+        {officesArray.map((el, i) => <Col key={i}><Office imageOffice={el.imageOffice} city={el.city} /></Col>)}
+
+      </Container>
+      <footer>
+        <div>
+          <span>We are leaders in 10 countries:</span>
+          <span> <a href="/">Poland</a> , <a href="/">Turkey </a>, <a href="/">Spain</a>, <a href="/">Italy</a>, <a
+            href="/">Czech Republic</a>, <a href="/">Mexico</a>,
+                <a href="/">Colombia</a>, <a href="/">Brazil</a>, <a href="/">Argentina</a> and <a href="/">Chile</a>
+          </span>
+        </div>
+        <div>This site uses cookies to deliver services in accordance with this Privacy Policy. You
+            can specify the conditions for storing or accessing cookies on your browser.
+        </div>
+        <div>www.docplanner.com © 2019</div>
+      </footer>
+
+
     </div>
   );
 }

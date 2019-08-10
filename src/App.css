@@ -1,3 +1,8 @@
+.main-container {
+  margin-top: 8%;
+}
+
+
 h1,
 h4 {
   color: #00b39b;
@@ -25,6 +30,7 @@ h3 .description-container {
   max-width: 100% !important;
   background-color: #e5faf8;
   height: 600px;
+  overflow: hidden;
 }
 
 .stat-title {
@@ -41,4 +47,39 @@ h3 .description-container {
 
 .primary-dev {
   max-width: 56% !important;
+}
+
+.image-statis {
+  margin-top: 1%;
+  margin-left: -15%;
+}
+
+.text-div {
+  text-align: center;
+}
+
+.office-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  margin: 0% 13% 9%;
+}
+
+footer {
+  height: 75px;
+  width: 100%;
+  border-top: 1px solid grey;
+  font-size: .75em;
+  color: #ababab;
+  text-align: center;
+  line-height: 2.2;
+}
+
+footer a {
+  color: #3d83df;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
